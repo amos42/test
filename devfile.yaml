@@ -1,6 +1,13 @@
 schemaVersion: 2.1.0
 metadata:
   name: test
+projects:
+  - git:
+      checkoutFrom:
+        revision: develop
+      remotes:
+        origin: 'https://github.com/amos42/test.git'
+    name: test  
 components:
   - container:
       env:
