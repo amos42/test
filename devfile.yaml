@@ -19,6 +19,8 @@ components:
           value: 'http://plugin-registry.eclipse-che.svc:8080/v3'
         - name: OPENVSX_REGISTRY_URL
           value: ''
+        - name: test
+          value: 'test value'         
       image: 'quay.io/devfile/universal-developer-image:ubi8-0e189d9'
       sourceMapping: /projects
     name: tools
