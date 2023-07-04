@@ -3,8 +3,6 @@ metadata:
   name: test
 projects:
   - git:
-      checkoutFrom:
-        revision: master
       remotes:
         origin: 'https://github.com/amos42/test.git'
     name: test  
