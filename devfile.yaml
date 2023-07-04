@@ -1,6 +1,13 @@
 schemaVersion: 2.1.0
 metadata:
   name: test
+projects:
+  - git:
+      checkoutFrom:
+        revision: develop
+      remotes:
+        origin: 'https://github.com/amos42/test.git'
+    name: test  
 components:
   - container:
       env:
@@ -12,6 +19,10 @@ components:
           value: 'http://plugin-registry.eclipse-che.svc:8080/v3'
         - name: OPENVSX_REGISTRY_URL
           value: ''
+        - name: test
+          value: 'test value'         
+        - name: start_branch
+          value: develop
       image: 'quay.io/devfile/universal-developer-image:ubi8-0e189d9'
       sourceMapping: /projects
     name: tools
