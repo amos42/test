@@ -4,7 +4,7 @@ metadata:
 projects:
   - git:
       checkoutFrom:
-        revision: develop
+        revision: master2
       remotes:
         origin: 'https://github.com/amos42/test.git'
     name: test  
@@ -22,7 +22,7 @@ components:
         - name: test
           value: 'test value'         
         - name: start_branch
-          value: master
+          value: master2
       image: 'quay.io/devfile/universal-developer-image:ubi8-0e189d9'
       sourceMapping: /projects
     name: tools
