@@ -22,7 +22,7 @@ components:
         - name: test
           value: 'test value'         
         - name: start_branch
-          value: master2
+          value: master3
       image: 'quay.io/devfile/universal-developer-image:ubi8-0e189d9'
       sourceMapping: /projects
     name: tools
