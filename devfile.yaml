@@ -4,7 +4,7 @@ metadata:
 projects:
   - git:
       checkoutFrom:
-        revision: develop
+        revision: master2
       remotes:
         origin: 'https://github.com/amos42/test.git'
     name: test  
