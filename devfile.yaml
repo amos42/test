@@ -1,28 +1,12 @@
 schemaVersion: 2.1.0
 metadata:
   name: test
-projects:
-  - git:
-      checkoutFrom:
-        revision: master4  
-      remotes:
-        origin: 'https://github.com/amos42/test.git'
-    name: test  
 components:
-  - container:
+  - name: tools
+    container:
       env:
-        - name: CHE_DASHBOARD_URL
-          value: 'https://192.168.49.2.nip.io'
-        - name: CHE_PLUGIN_REGISTRY_URL
-          value: 'https://192.168.49.2.nip.io/plugin-registry/v3'
-        - name: CHE_PLUGIN_REGISTRY_INTERNAL_URL
-          value: 'http://plugin-registry.eclipse-che.svc:8080/v3'
-        - name: OPENVSX_REGISTRY_URL
-          value: ''
-        - name: test
-          value: 'test value'         
-        - name: start_branch
-          value: master4
-      image: 'quay.io/devfile/universal-developer-image:ubi8-0e189d9'
-      sourceMapping: /projects
-    name: tools
+        - name: UDI_NODE_VERSION
+          value: '14'
+      image: 'sds.redii.net/ide-dev/universal-developer-image:ubi-test4'
+      memoryLimit: 1G
+      memoryRequest: 512Mi
